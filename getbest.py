@@ -23,7 +23,7 @@ def findTop(f,num_col, mark_col):
     return best_idx, best
 
 
-f = open(sys.argv[1])
+f = open(sys.argv[0])
 num_col, mark_col = getCols(f)
 best_idx, best = findTop(f,num_col,mark_col)
 print("The top student was student %s with %d"%(best_idx,best))
